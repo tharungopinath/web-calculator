@@ -78,7 +78,6 @@ number.forEach(btn => {
     btn.addEventListener('click', (event) => {
         op.forEach (btn => {
             btn.disabled = false;
-            console.log("OP ENABLED");
         });
         const value = event.target.textContent.trim();
         if (userOp.length == 0){
@@ -95,22 +94,16 @@ number.forEach(btn => {
         if (event.target.id == "decimal") {
             btn.disabled = true;
         }
-        console.log(num1);
-        console.log(num2);
-        console.log(event.target.id);
     });
 });
 
 op.forEach(btn => {
     if (str1.length < 1){
         btn.disabled = true;
-        console.log("OP DISABLED");
     }
     btn.addEventListener("click", (event) => {
         decimal.disabled = false;
         userOp.push(event.target.textContent);
-        console.log(event.target.textContent);
-        console.log(userOp);
         if ((userOp.length > 0) && (str2.length < 1)){
             op.forEach(btn => {
                 btn.disabled = true;
