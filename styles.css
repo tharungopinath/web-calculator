@@ -21,6 +21,15 @@ body {
     min-height: 100px;
     margin-bottom: 10px;
     border-radius: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 60px;
+    box-sizing: border-box;
+    padding: 15px;
+    color:aliceblue;
+    max-width: 535px;
 }
 .outerColumn, .innerColumn, .numerics{
     display: flex;
