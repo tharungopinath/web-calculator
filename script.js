@@ -116,8 +116,6 @@ op.forEach(btn => {
             if (userOp[0] == '+') {
                 num1 = add(num1, num2);
                 display.textContent = formatNumber(num1);
-                // keep str1 in sync with the computed result so further actions (backspace, operator changes)
-                // reflect the latest left-hand value
                 str1 = String(num1);
                 userOp.shift();
                 str2 = "";
